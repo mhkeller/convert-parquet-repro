@@ -8,7 +8,7 @@ The file iris.csv exists in a local postgres database.
 I exported it to parquet using the command
 
 ```sh
-pg2parquet_0.1-beta.6 export --host localhost --port 5432 --dbname my_db --output-file iris.parquet -t $iris
+pg2parquet_0.1-beta.6 export --host localhost --port 5432 --dbname my_db --output-file iris.parquet -t iris
 ```
 
 I'm trying to convert it to arrow using [`parquet2arrow`](https://github.com/alexkreidler/parquet2arrow).
